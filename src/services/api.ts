@@ -12,7 +12,7 @@ const api = axios.create({
 export const sendMessage = async (message: string, role: any) => {
   const prompt = `You are a ${role.role} with the following description: ${role.description}.`;
   const send = {
-    model: config.model,
+    model:config.model,
     messages: [
       {
         role: "system",
